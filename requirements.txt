@@ -1,0 +1,5 @@
+pip install fastapi uvicorn python-multipart
+pip install requests
+
+
+python -m uvicorn main:app --reload
