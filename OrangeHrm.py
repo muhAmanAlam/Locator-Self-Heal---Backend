@@ -16,7 +16,6 @@ from google import genai
 from cleaner import clean_html
 from db_functions import save_xpath_and_dom, fetch_xpath_entry, update_xpath_entry
 
-client = genai.Client(api_key="AIzaSyDz_MvESKjQtYKoeUHJISfhpWFqHQdODCg")
 
 def sendkeys(locator, text):
     wait.until(EC.visibility_of_element_located((By.XPATH, locator)))
